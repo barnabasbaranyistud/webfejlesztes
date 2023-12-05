@@ -1,7 +1,7 @@
 # webfejlesztes
 1. Oldal készítője: Baranyi Barnabás
 
-2. Weboldal megtalálható a github.hu oldalon
+2. Weboldal megtalálható a https://barnabasbaranyistud.github.io/webfejlesztes/ oldalon
 
 3. A weboldalam az egyik kedvenc gyerekkori (mai) játékomat mutatja be, ami az elmúlt évben nagyobb változásokon megy keresztül.
 Célja a játék bemutatása, szemléltetése és a vélemények befogadása.
