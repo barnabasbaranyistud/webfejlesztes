@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Baranyi Barnabás">
+    <meta name="copyright" content="Counter-Strike 2">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Counter-Strike 2 - beadandó weboldal</title>
+    <link rel="stylesheet" href="css/cs2.css">
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="javascript/galleria-1.6.1/dist/themes/classic/galleria.classic.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#skins').galleria(
+                width = 600,
+                height = 600
+            );
+        });
+    </script>
+        <script>
+            $(document).ready(function () {
+                $('#graphics').galleria(
+                    width = 600,
+                    height = 600
+                );
+            });
+        </script>
+</head>
+<body class="bg">
+    <div class="container">
+        <header class="header">
+            <h1 class="focim">Counter-Strike 2</h1>
+            <p class="copyright">This site is not the offical site of Counter Strike 2.<br>
+            Counter-Strike, Counter-Strike 2, CS:GO, and their respective logos are trademarks and/or registered trademarks of Valve Corporation. &copy; 2023 Valve Corporation, all rights reserved.</p>
+        </header>
+        <nav class="mleft">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Maps.html">Maps</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Weapons.html">Weapons</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a  class="active" href="#">Skins</a></li>
+            </ul>
+        </nav>
+        <nav class="mright">
+            <ul>
+                <li><a href="Questionnare.html">Questionnaire</a></li>
+            </ul>
+        </nav>
+        <article class="title">
+            <h2 class="page_h">The In-Game "Currency":<br>Skins</h2>
+        </article>
+        <article class="marg">
+            <h2 class="article_h">What Are Skins?</h2>
+            <p class="contents">In CS, just like in almost all the other online games, you can buy stuff. And honestly what else would you buy, then customizations and designs for your weapons and characters? Skins offer a great way to customize and make your weapons look better. In the new game, because of the improved graphics, they look even nicer. There are skins for every weapon in the game, so they offer a wide variety for each one. These skins can be bought from other players or opened from boxes, but one thing is for certain, it is gonna be expensive if you want the best looking skins.</p>
+            <article id="skins">
+                <img src="images/5.jpeg" alt="1. example" title="AK-47 - Fire Serpent">
+                <img src="images/8.webp" alt="2. example" title="AK-47 - Bloodline">
+                <img src="images/10.jpeg" alt="3. example" title="AK-47 - Legion of Anubis">
+                <img src="images/11.webp" alt="4. example" title="AK-47 - Community made skin">
+                <img src="images/12.png" alt="The last CS:GO collection" title="Prisma 2 Collection">
+            </article>
+        <div class="margtop">
+            <h2 class="article_h">Graphic Revamps and Prices</h2>
+            <p class="contents">With the release of CS2, the game has undergone many many graphic changes, and it was (qualitywise) for the better. Each maps' lighting looks incredible, and so does the new appearance of skins. Many thought that this would give extra value to the skins and cosmetics in the game, but sadly it didn't. With the game being elss responsive and not brining enough new players, there is less of a demand for skins, and so prices has only fallen. This doesn't mean every single weapon is worthless, there are still rare collectors' items, which are ridiculously expensive. The most expensive skin in the game was sold for $400,000. Insane.</p>
+            <article id="graphics">
+                <img src="images/6.jpeg" alt="Visual changes of the Deagle" title="Desert Eagle - Bronze Deco">
+                <img src="images/7.webp" alt="Visual changes of the M4A1-s" title="M4A1-S - Hot Rod">
+                <img src="images/13.png" alt="Visual changes of the M4A4" title="M4A4 - Royal Paladin">
+            </article>
+        </div>
+        <div class="container2 margtop">
+            <h2 class="article_h">Trade-ups</h2>
+            <p class="contents">You can still, you always could trade up skins for better ones. It works like so: You select 10 skins of your choice from the same grade (usually ones you don't need) and you get 1 skin of the tier above the ones you selected. Not many people use this, since it's mostly useless and pointless to do, but you could get some profit out of these trades, if you trade in the right waepons and have enough luck. However, it's usually not profitable long-term.</p>
+            <div class="container middle">
+            <aside class="s1">
+                <img class="map" src="images/tradeup1.jpeg" alt="Trade up 1">
+            </aside>
+            <aside class="s2">
+                <img class="map" src="images/tradeup2.jpg" alt="Trade up 2">
+            </aside>
+            </div>
+        </div>
+        </article>
+    </div>
+    <footer>Made for education purposes.<br>
+        &copy; Baranyi Barnabás 2023</footer>
+</body>
+</html>

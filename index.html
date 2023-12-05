@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Baranyi Barnabás">
+    <meta name="copyright" content="Counter-Strike 2">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Counter-Strike 2 - beadandó weboldal</title>
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/galleria-1.6.1/dist/galleria.min.js"></script>
+    <script src="javascript/galleria-1.6.1/dist/themes/azur/galleria.azur.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#nuke').galleria(
+                width = 600,
+                height = 600
+            );
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('#over').galleria(
+                width = 600,
+                height = 600
+            );
+        });
+    </script>
+    <link rel="stylesheet" href="css/cs2.css">
+</head>
+<body class="bg">
+    <div class="container">
+        <header class="header">
+            <h1 class="focim">Counter-Strike 2</h1>
+            <p class="copyright">This site is not the offical site of Counter Strike 2.<br>
+            Counter-Strike, Counter-Strike 2, CS:GO, and their respective logos are trademarks and/or registered trademarks of Valve Corporation. &copy; 2023 Valve Corporation, all rights reserved.</p>
+        </header>
+        <nav class="mleft">
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Maps.html">Maps</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Weapons.html">Weapons</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Skins.html">Skins</a></li>
+            </ul>
+        </nav>
+        <nav class="mright">
+            <ul>
+                <li><a href="Questionnare.html">Questionnaire</a></li>
+            </ul>
+        </nav>
+        <article class="marg">
+            <h2 class="article_h">The next era of Counter-Strike</h2>
+            <p class="contents">Counter-Strike 2 is the largest technical leap forward in Counter-Strike’s history, ensuring new features and updates for years to come.<br>
+            All of the game’s new features were revealed when it officially launched this summer, but the road to Counter-Strike 2 has begun before, with a Limited Test for select CS:GO players. During this testing period, Valve evaluated a subset of features to shake out any issues before the worldwide release.<br> 
+            Counter-Strike 2 arrived this summer as a free upgrade to CS:GO. So build your loadout, hone your skills, and prepare yourself for what’s next!
+            </p>
+            <p class="learn">Learn more about some of the features of the CS2 Limited Test <a class="actual" href="https://counter-strike.net/CS2" target="_blank">here</a></p>
+            <iframe src="https://www.youtube.com/embed/xdPwIEQyLxk" allowfullscreen></iframe>
+            <h2 class="article_h">GAME CHANGER</h2>
+            <p class="contents">Smoke Grenades are now dynamic volumetric objects that interact with the environment, and react to lighting, gunfire, and explosions.</p>
+            <table>
+                <tr>
+                    <td>Smoke now has the ability to interact with other gameplay events, creating new opportunities. Bullets and HE grenades can push smoke to briefly clear sightlines or expand occlusion.</td>
+                    <td>Now the smoke will seep out of opened doorways and broken windows, go down and up stairs, as well as expand in long corridors and combine with other smokes.</td>
+                </tr>
+                <tr>
+                    <td>
+                    <video class="loop" autoplay loop muted>
+                        <source src="videos/smokes_vid1.mp4" type="video/mp4">Not supported video
+                    </video>
+                    </td>
+                    <td>
+                        <video class="loop" autoplay loop muted>
+                            <source src="videos/smokes_vid2.mp4" type="video/mp4">Not supported video
+                        </video>
+                    </td>
+                </tr>
+            </table>
+            <h2 class="article_h">Cleaner, Brighter, Better</h2>
+            <h3>Full Overhaul Maps</h3>
+            <p class="contents">The overhauled maps have been fully rebuilt from the ground up, leveraging all of the new Source 2 tools and rendering features. All the maps have been changed and optimised for the new game, but the look of these maps aim to add extreme quality using the new visuals.</p>
+            <article id="nuke">
+                <img src="images/1.jpeg" alt="A fejlesztés előtt" title="Nuke">
+                <img src="images/2.jpeg" alt="A fejlesztés után" title="Nuke2">
+            </article>
+            <h3>Upgrade Maps</h3>
+            <p class="contents">These are maps that use new Source 2 lighting, including a physically based rendering system that produces realistic materials, lighting, and reflections. Most maps underwent similiar changes to this, for example Overpass, Vertigo, Mirage, and so on.</p>
+            <article id="over">
+                <img src="images/3.jpeg" alt="A fejlesztés előtt" title="Overpass">
+                <img src="images/4.avif" alt="A fejlesztés után" title="Overpass2">
+            </article>
+        </article>
+    </div>
+    <footer>Made for education purposes.<br>
+        &copy; Baranyi Barnabás 2023</footer>
+</body>
+</html>

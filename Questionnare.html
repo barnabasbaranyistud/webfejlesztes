@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Baranyi Barnabás">
+    <meta name="copyright" content="Counter-Strike 2">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <title>Counter-Strike 2 - beadandó weboldal</title>
+    <script src="javascript/jquery-3.7.1.min.js"></script>
+    <script src="javascript/jquery-validation-1/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#valid").validate({
+            rules: {
+                    firstname: "required",
+                    lastname: "required",
+                    email: {
+                    required: true,
+                    email: true
+                    },
+                    password: {
+                    required: true,
+                    minlength: 6
+                    },
+                    phone: {
+                    required: true,
+                    },
+                    played: "required"
+                    },
+            messages: {
+                    firstname: " This field is mandatory",
+                    lastname: " This field is mandatory.",
+                    password: {
+                    required: " This field is mandatory.",
+                    minlength: " Your password needs to be at least 6 characters long!"
+                    },
+                    email: {
+                    required: " This field is mandatory.",
+                    email: " Please use a real email address!"
+                    },
+                    phone: {
+                    required: " This field is mandatory.",
+                    },
+                    played: " One of these fields is mandatory.",
+                    },
+        });
+        });
+        </script>
+    <link rel="stylesheet" href="css/cs2.css">
+</head>
+<body class="bg">
+    <div class="container">
+        <header class="header">
+            <h1 class="focim">Counter-Strike 2</h1>
+            <p class="copyright">This site is not the offical site of Counter Strike 2.<br>
+            Counter-Strike, Counter-Strike 2, CS:GO, and their respective logos are trademarks and/or registered trademarks of Valve Corporation. &copy; 2023 Valve Corporation, all rights reserved.</p>
+        </header>
+        <nav class="mleft">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Maps.html">Maps</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Weapons.html">Weapons</a></li>
+            </ul>
+        </nav>
+        <nav>
+            <ul>
+                <li><a href="Skins.html">Skins</a></li>
+            </ul>
+        </nav>
+        <nav class="mright">
+            <ul>
+                <li><a  class="active" href="#">Questionnaire</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2 class="article_h">Survey for Counter-Strike 2 enjoyers</h2>
+            <table class="mid max">
+                <tr>
+                    <td class="mid max">
+                        <button class="button" id="wasted">Click to see how much time you've wasted on CS!</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="mid max">
+                        <p id="asd"></p>
+                    </td>
+                </tr>
+            </table>
+            <form id="valid" method="post" action="http://szamtud.uni-corvinus.hu/receive.php" novalidate>
+                <div class="flexplayed">
+                    <p>Have you ever played Counter-Strike?</p>
+                </div>
+                <div class="flexplayed">
+                    <p><label for="played">Yes</label><input type="radio" name="played" id="played">
+                    <label for="played2">No</label><input type="radio" name="played" id="played2"></p>
+                </div>
+                <hr>
+                <div class="flexm"><p>What are your favourite weapons?</p></div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="awp" id="awp"><label for="awp">AWP</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="scout" id="scout"><label for="scout">Scout</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="ak" id="ak"><label for="ak">AK-47</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="m4s" id="m4s"><label for="m4s">M4A1-S</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="m4" id="m4"><label for="m4">M4A4</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="famas" id="famas"><label for="famas">Famas</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="galil" id="galil"><label for="galil">Galil</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="p90" id="p90"><label for="p90">P90</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="negev" id="negev"><label for="negev">Negev</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="knife" id="knife"><label for="knife">Knife</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="zeus" id="zeus"><label for="zeus">Zeus</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="deagle" id="deagle"><label for="deagle">Deagle</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="dualies" id="dualies"><label for="dualies">Dualies</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="cz" id="cz"><label for="cz">Cz</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="glock" id="glock"><label for="glock">Glock</label>
+                </div>
+                <div class="flexmcheck">
+                    <input type="checkbox" name="usp" id="usp"><label for="usp">USP-S</label>
+                </div>
+                <hr>
+                <div class="flexm">
+                    <label for="started">When did you start playing?</label>
+                </div>
+                <div class="flexm">
+                    <input type="date" name="started" id="started">
+                </div>
+                <hr>
+                <div class="flexm">
+                    <label for="rating">How much do you like the game?</label>
+                </div>
+                <div class="flexm">
+                    1&nbsp;<input type="range" name="rating" id="rating" min="0" max="10" value="5">&nbsp;10
+                </div>
+                <hr>
+            <div class="flexcols response">
+                <div class="flexmtext">
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="example@gmail.com">
+                    </div>
+                </div>
+                <div class="flexmtext">
+                    <div>
+                        <label for="ln">Last name: </label>
+                        <input type="text" name="lastname" id="ln">
+                    </div>
+                </div>
+                <div class="flexmtext">
+                    <div>
+                        <label for="fn">First Name: </label>
+                        <input type="text" name="firstname" id="fn">
+                    </div>
+                </div>
+                <div class="flexmtext">
+                    <div>
+                        <label for="pw">Password: </label>
+                        <input type="password" name="password" id="pw" maxlength="15">
+                    </div>
+                </div>
+            </div>
+            <div class="flexcols response">
+                <div class="flexmtext">
+                    <div>
+                        <label for="textbox">Some pro tips: </label>
+                        <textarea name="suggest" id="textbox" rows="1" cols="17"></textarea>
+                    </div>
+                </div>
+                <div class="flexmtext">
+                    <div>
+                        <label for="color">Favourite color: </label>
+                        <input type="color" name="color" id="color">
+                    </div>
+                </div>
+                <div class="flexmtext">
+                    <div>
+                        <label for="phone">Phone number: </label>
+                        <input type="tel" name="phone" id="phone" placeholder="+36123456789">
+                    </div>
+                </div>
+            </div>
+                <hr>
+                <div class="flexm">
+                    <p>
+                        <input type="reset" value="Clear" class="button">
+                        <input type="submit" value="Submit"  class="button">
+                        <input type="button" id="type" value="Examine results" class="button">
+                    </p>
+                </div>
+            </form>
+        </article>
+    </div>
+    <footer>Made for education purposes.<br>
+        &copy; Baranyi Barnabás 2023</footer>
+    <script src="javascript/questionnare.js"></script>
+</body>
+</html>
