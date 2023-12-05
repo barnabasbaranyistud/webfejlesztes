@@ -3,7 +3,7 @@
 
 2. Weboldal megtalálható a https://barnabasbaranyistud.github.io/webfejlesztes/ oldalon
 
-3. A weboldalam az egyik kedvenc gyerekkori (mai) játékomat mutatja be, ami az elmúlt évben nagyobb változásokon megy keresztül.
+3. A weboldalam az egyik kedvenc gyerekkori (mai) játékomat mutatja be, ami az elmúlt évben nagyobb változásokon ment keresztül.
 Célja a játék bemutatása, szemléltetése és a vélemények befogadása.
 
 4. A Questionnare.html oldalon található saját javascript kód, ahol a felhasználó rányomva a felső gombra beírhatja, hogy hány órát játszott a játékkal, majd ezt a program átszámolja napokba (kerekítve egész napra), ezután pedig visszaad egy egyedi választ az alapján, hogy a mekkora a beírt szám nagysága. (5 válaszlehetőség van, szöveg vagy negatív szám esetén újra be kell írnia egy helyes értéket a felhasználónak)
